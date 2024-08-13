@@ -10,4 +10,7 @@ class BooksController < ApplicationController
 
   def destroy
   end
+
+  def new #びゅーもいる？？
+  end
 end
