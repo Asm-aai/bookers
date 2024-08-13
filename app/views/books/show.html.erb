@@ -5,4 +5,5 @@
 <span><%= @book.body %></span>
 <br>
 <p></p>
-<span>Edit</span><span>|</span><span>Back</span>
+<span><%= link_to "Edit" , edit_book_path(@book.id) %></span>
+<span>|</span><span>Back</span>
