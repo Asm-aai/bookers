@@ -20,7 +20,10 @@ class BooksController < ApplicationController
 
   end
 
-  def destroy #これいらん？？？
+  def destroy
+    book = Book.find(params[:id])
+    book.delete
+    redirect_to '/books'
   end
 
   def new #びゅーもいる？？
