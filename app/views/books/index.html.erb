@@ -6,6 +6,7 @@
 <% @books.each do |book| %>
   <span><%= book.title %></span>
   <span><%= book.body %></span>
+  <%= link_to "Show" , book_path(book.id) %>
   <br>
 <% end %>
 
